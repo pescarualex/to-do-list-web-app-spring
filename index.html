@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+</head>
+<body>
+<div id="main-content">
+    <h2>To-Do List</h2>
+
+    <div id="create-task">
+
+        <h4>Create task</h4>
+
+        <form id="create-task-form">
+
+            <label for="task-description">Description: </label>
+            <input type="text" id="task-description" placeholder="Enter task description">
+
+            <label for="task-deadline">Deadline:</label>
+            <input type="date" id="task-deadline">
+
+            <input type="submit" value="Save">
+        </form>
+
+    </div>
+
+    <div id="existing-tasks">
+
+        <table id="tasks">
+            <thead>
+            <tr>
+                <th>Description</th>
+                <th>Deadline</th>
+                <th>Done</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+<script src="js/lib/jquery-3.5.1.js"></script>
+<script src="js/tasks.js"></script>
+
+</body>
+</html>
