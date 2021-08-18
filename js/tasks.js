@@ -88,7 +88,7 @@ window.ToDoList = {
             event.preventDefault();
 
             const id = $(this).data('id');
-            const checkboxChecked = $(this).prop('checked', true);
+            const checkboxChecked = $(this).is(':checked');
 
             ToDoList.updateTask(id, checkboxChecked);
         });
